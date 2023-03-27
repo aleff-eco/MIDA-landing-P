@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+
+    <title >MIDA viajes</title>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="--biggest-font-size" style="text-decoration: none">MIDA</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#inicio" class="nav__link" style="text-decoration:none">Inicio</a>
+                    </li>
+                    <li class="nav__item"><a href="#share" class="nav__link"
+                            style="text-decoration:none">Características</a></li>
+                    <li class="nav__item"><a href="#decoration" class="nav__link" style="text-decoration:none">Lugares
+                            turísticos</a></li>
+                    <li class="nav__item"><a href="#accessory" class="nav__link"
+                            style="text-decoration:none">Testimonios</a></li>
+                </ul>
+
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+
+        <section class="inicio" id="inicio">
+            <div class="inicio__container bd-container bd-grid">
+                <div class="inicio__imagen">
+                    <img src="./Img/Chiapas1.webp" alt="Foto">
+                </div>
+
+                <div class="inicio__datos">
+                    <h1 class="inicio__titulo">CHIAPAS</h1>
+                    <p class="ventajas__descripcion">Chiapas es uno de los estados más hermosos y fascinantes de México,
+                        con una rica historia, cultura y una gran variedad de atractivos turísticos naturales y
+                        culturales.</p>
+                    <a href="https://www.google.com.mx/maps/place/Chiapas/@16.2595926,-93.379329,8z/data=!3m1!4b1!4m6!3m5!1s0x858d44b49757ce67:0xcf0033824619d615!8m2!3d16.7569318!4d-93.1292353!16zL20vMDF6bHg"
+                        target="_blank" class="button">Ver en Google Maps</a>
+                </div>
+                
+                <style>
+                  .button {
+                    text-decoration: none;
+                  }
+                </style>
+                
+
+            </div>
+        </section>
+        <section class="ventajas section bd-container" id="share">
+            <div class="ventajas__container bd-grid">
+                <div class="ventajas__datos">
+                    <h2 class="section-title-center">Lo mejor de Chiapas</h2>
+                    <p class="ventajas__descripcion">
+                        Chiapas tiene muchas cosas que puedes conocer como ruinas arqueológicas, bellezas naturales,
+                        cultura y tradiciones, al igual que mucha gastronomia. Es por todo eso que nosotros te podemos
+                        brindar vuelos a costos justos para poder darte la oportunidad de conocer todos estos lugares.
+                    </p>
+                </div>
+
+                <div class="ventajas__video">
+                    <iframe src="https://www.youtube.com/embed/DE-yr11MTmA" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                </div>
+            </div>
+        </section>
+        <section class="lugares section bd-container" id="decoration">
+            <h2 class="lugares_titulos">Ofrecemos Transporte a:</h2>
+            <br>
+            <br>
+            <div class="lugares__container bd-grid">
+                <div class="lugares__datos">
+                    <img src="./Img/Palenque.jpg" alt="Foto" class="lugares__imagen">
+                    <h3 class="lugares_titulos">Palenque</h3>
+                    <p class="button sites-link">
+                        Palenque es uno de los sitios arqueológicos mayas más impresionantes de México, con una
+                        impresionante arquitectura, una densa selva y una rica historia.
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <button onclick="togglePrices(this)" class="button">Ver precios</button>
+                    <p class="button prices-link" style="display: none;">
+                        Transporte desde: $500
+                    </p>
+
+                </div>
+
+                <div class="lugares__datos">
+                    <img src="./Img/Cañon.jpg" alt="Foto" class="lugares__imagen">
+                    <h3 class="lugares_titulos"><br> Cañón del Sumidero</h3>
+                    <p class="button sites-link">
+                        Este impresionante cañón fue formado por el río Grijalva y ofrece una vista espectacular de las
+                        altas paredes de roca que se elevan hasta 1,000 metros de altura.
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <button onclick="togglePrices(this)" class="button">Ver precios</button>
+                    <p class="button prices-link" style="display: none;">
+                        Transporte desde: $500
+                    </p>
+
+                </div>
+
+                <div class="lugares__datos">
+                    <img src="./Img/Cascadas.jpg" alt="Foto" class="lugares__imagen">
+                    <h3 class="lugares_titulos"><br> Cascadas de agua azul</h3>
+                    <p class="button sites-link">
+                        Las Cascadas de Agua Azul son uno de los destinos turísticos más populares de Chiapas, y por una
+                        buena razón. Estas cascadas son famosas por su agua azul cristalina y por el impresionante
+                        paisaje natural que las rodea.
+                    </p>
+                    <br>
+                    <br>
+                    <button onclick="togglePrices(this)" class="button">Ver precios</button>
+                    <p class="button prices-link" style="display: none;">
+                        Transporte desde: $500
+                    </p>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="opiniones section bd-container" id="accessory">
+            <h2 class="section-title">Que dicen de nosotros</h2>
+
+            <div class="opiniones__container bd-grid">
+                <div class="opiniones__content">
+                    <img src="./Img/p1.jpg" alt="Foto" class="opiniones__imagen">
+                    <h3 class="opiniones__titulo">Renata Mendoza</h3>
+                    <span class="opiniones__opinion">La empresa es increíble. Los aviones son cómodos, el personal es
+                        amable y servicial, y el servicio al cliente es excepcional.</span>
+                    <span class="opiniones__fecha">14/02/2023</span>
+                </div>
+
+                <div class="opiniones__content">
+                    <img src="./Img/p2.jpg" alt="Foto" class="opiniones__imagen">
+                    <h3 class="opiniones__titulo">Benjamín Maldonado</h3>
+                    <span class="opiniones__opinion">Recomendaría altamente. Sus precios son competitivos y los vuelos
+                        siempre salen a tiempo. Además, su servicio al cliente es excelente. </span>
+                    <span class="opiniones__fecha">23/02/2023</span>
+                </div>
+
+                <div class="opiniones__content">
+                    <img src="./Img/p3.png" alt="Foto" class="opiniones__imagen">
+                    <h3 class="accessory__titulo">Karla Figueroa</h3>
+                    <span class="opiniones__opinion">He volado con la empresa varias veces y siempre he tenido una
+                        experiencia maravillosa. Los aviones son seguros y bien mantenidos, y el personal de la
+                        tripulación es muy profesional. </span>
+                    <span class="opiniones__fecha">06/03/2023</span>
+                </div>
+            </div>
+        </section>
+        <section class="correo section">
+            <div class="correo__container bd-container bd-grid">
+                <div class="correo__content">
+                    <h2 class="section-title-center correo__titulo">Conoce más...</h2>
+                    <p class="correo__descripcion">Si deseas conocer más a fondo sobre los viajes turísticos, así como
+                        los mejores lugares a donde ir, no dudes en dejar tu correo y nosotros te enviaremos noticias
+                        acerca de ello.</p>
+
+                    <body>
+                        <div class="correo__direccion">
+                            <input type="email" name="email" placeholder="Dirección email" class="correo__input"
+                                id="email">
+                            <button onclick="miFuncion()" class="button" id="boton">Enviar</button>
+                        </div>
+                    </body>
+
+                </div>
+                <div class="correo__imagen">
+                    <img src="./Img/Chiapas.png" alt="Foto">
+                </div>
+        </section>
+    </main>
+    <footer class="footer section">
+        <div class="footer-columns-wrapper">
+            <div class="footer-column">
+                <span class="button sites-link">Ayuda</span>
+                <span class="button sites-link">Compartir</span>
+                <span class="button sites-link">Testimonios</span>
+                <span class="button sites-link">Google Maps</span>
+            </div>
+            <div class="footer-column">
+                <span class="button sites-link">961 1234 567</span>
+                <span class="button sites-link">help@MIDA.com</span>
+                <span class="button sites-link">citas@MIDA.com</span>
+                <span class="button sites-link">comentarios@MIDA.com</span>
+            </div>
+            <div class="footer-column">
+                <div>
+                    <p class="term-link">Terminos y condiciones.</p>
+                </div>
+                <div class="primary-link">
+                    <p class="term-link">Politicas de privacidad.</p>
+
+                </div>
+                <div>
+                    <div class="social-icons">
+                      <a href="https://www.facebook.com/alelegasov" class="icon">
+                        <img src="./img/facebook.png" alt="Facebook icon" width="35">
+                      </a>
+                      <a href="https://twitter.com/es" class="icon" >
+                        <img src="./img/twitter.png" alt="Twitter icon" width="40">
+                      </a>
+                      <a href="https://www.instagram.com/alelegasov/" class="icon">
+                        <img src="./img/instagram.png" alt="Instagram icon" width="35">
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copy">&#169; 2023 MIDA</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
